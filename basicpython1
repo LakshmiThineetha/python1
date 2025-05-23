@@ -1,0 +1,359 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "7582bfcd-4c6e-4f00-b1cd-58d4a0849e11",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 11\n",
+      " 22\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "33\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=int(input())\n",
+    "num2=int(input())\n",
+    "total=num1+num2\n",
+    "print(total)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c78b08f7-d245-45fc-aaaf-d2c28d784124",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 33\n",
+      " 22\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=int(input())\n",
+    "num2=int(input())\n",
+    "total=num1-num2\n",
+    "print(total)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "f5632d5c-c31b-4be6-b49a-c93d3d33dcbe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 24\n",
+      " 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "48\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=int(input())\n",
+    "num2=int(input())\n",
+    "total=num1*num2\n",
+    "print(total)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "841c8037-269a-4df6-9f79-822ef0fd5c2d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a name Lakshmi\n",
+      "enter a name Thineetha\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "LakshmiThineetha\n"
+     ]
+    }
+   ],
+   "source": [
+    "str1=input(\"enter a name\")\n",
+    "str2=input(\"enter a name\")\n",
+    "fullname=str1+str2\n",
+    "print(fullname)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "385eac52-625d-4131-8418-7a649ac7885d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a float value 35\n",
+      "enter a float value 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "division: 7.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#float datatype sample\n",
+    "n1=float(input(\"enter a float value\"))\n",
+    "n2=float(input(\"enter a float value\"))\n",
+    "print(\"division:\",n1/n2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "ad8e6091-8ec4-4c75-b79d-9836e48858ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a string Thineetha\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Thineetha\n",
+      "9\n",
+      "THINEETHA\n",
+      "thineetha\n",
+      "hi\n",
+      "ahteenihT\n"
+     ]
+    }
+   ],
+   "source": [
+    "# string sample operations\n",
+    "s=str(input(\"enter a string\"))\n",
+    "print(s)\n",
+    "print(len(s))\n",
+    "print(s.upper())\n",
+    "print(s.lower())\n",
+    "print(s[1:3])\n",
+    "print(s[::-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "78032b3d-a3c2-4fd6-a1e2-ac1e9d4e5b1b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['pineapple', 'mango', 'kiwi']\n",
+      "True\n",
+      "insert\n",
+      "['pineapple', 'mango', 'kiwi', 'papaya']\n",
+      "delete\n",
+      "['mango', 'kiwi', 'papaya']\n",
+      "mango\n",
+      "mango\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List operations\n",
+    "fruits=['pineapple','mango','kiwi']\n",
+    "print(fruits)\n",
+    "print('pineapple' in fruits)\n",
+    "print(\"insert\")\n",
+    "fruits.append('papaya')\n",
+    "print(fruits)\n",
+    "print(\"delete\")\n",
+    "fruits.remove('pineapple')\n",
+    "print(fruits)\n",
+    "print(fruits[0])\n",
+    "print(fruits[-3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "b120847a-357e-4b64-94e2-6198c03053e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 2], [3, 4], [5, 6]]\n",
+      "[1, 2]\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List within a list\n",
+    "nest=[[1,2],[3,4],[5,6]]\n",
+    "print(nest)\n",
+    "print(nest[0])\n",
+    "print(nest[1][0])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "61faa71c-69b9-417e-8363-1686e0840552",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 2], [3, 4], [5, 6]]\n",
+      "[1, 2]\n",
+      "3\n",
+      "Modify\n",
+      "[[1, 2], [3, 4], [5, 99]]\n",
+      "[[1, 2], [3, 4], 100]\n",
+      "[[1, 2], [3, 4], [11, 22]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List within a list\n",
+    "nest=[[1,2],[3,4],[5,6]]\n",
+    "print(nest)\n",
+    "print(nest[0])\n",
+    "print(nest[1][0])\n",
+    "print(\"Modify\")\n",
+    "nest[2][1]=99\n",
+    "print(nest)\n",
+    "nest[2]= 100\n",
+    "print(nest)\n",
+    "l2=[[1,2],[3,4]]\n",
+    "l2.append([11,22])\n",
+    "print(l2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "9fd20123-4e5e-49d3-89b6-00d2cf95814e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 2], [3, 4], [1, 2], [3, 4]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List \n",
+    "nest=[[1,2],[3,4]]\n",
+    "float=[item for sub in nest for item in nest]\n",
+    "print(float)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "6cf7ea4f-7bc8-4f22-876c-66e1cc798653",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['item']\n",
+      "['item', 'item']\n",
+      "['item', 'item', 'item']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# General list\n",
+    "nest=[[1,2],[3,4],[5,6]]\n",
+    "float=[ ]\n",
+    "for sub in nest:\n",
+    "    float.append('item')\n",
+    "    print(float)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a20882df-bd5f-47cd-85de-4af32f1ed1f8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
